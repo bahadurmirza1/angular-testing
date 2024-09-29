@@ -35,5 +35,7 @@
         </tr>
     </tbody>
 </table>
-<p *ngIf="!Records">No Record Found</p>
+@if(Records.length==0){
+    <p>No Record Found</p>
+}
 <button (click)="onClear()">Delete All</button>         
