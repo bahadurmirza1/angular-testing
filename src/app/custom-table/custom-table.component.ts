@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { Agent } from 'http';
 
 @Component({
   selector: 'app-custom-table',
@@ -48,7 +47,6 @@ onClear(){
 
 
 onActionClick(id:number,type:string){
-
   if(type=='view'|| type=='edit'){
     this.route.navigate(['form',type,id])
   }
